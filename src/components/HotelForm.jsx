@@ -43,7 +43,7 @@ const HotelForm = () => {
         e.preventDefault()
         // console.log(formData)
         try {
-            const response = await fetch("https://bi-1-3-hw-2-ruddy.vercel.app/hotels",{
+            const response = await fetch("https://be-4-4-hw-2-iota.vercel.app/hotels",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"

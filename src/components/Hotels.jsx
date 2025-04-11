@@ -2,12 +2,12 @@ import { useState } from "react"
 import useFetch from "../useFetch"
 const Hotels = () => {
     const [successMessage,setSuccessMessage] = useState("")
-    const {data,loading,error} = useFetch("https://bi-1-3-hw-2-ruddy.vercel.app/hotels")
+    const {data,loading,error} = useFetch("https://be-4-4-hw-2-iota.vercel.app/hotels")
     async function btnDeleteHandler(e){
       e.preventDefault()
       const {dataset:{id}} = e.target
       try {
-        const response = await fetch(`https://bi-1-3-hw-2-ruddy.vercel.app/hotels/${id}`,{method:"DELETE"})
+        const response = await fetch(`https://be-4-4-hw-2-iota.vercel.app/hotels/${id}`,{method:"DELETE"})
         if(!response.ok){
           throw "Failed to delete hotel data"
         }
